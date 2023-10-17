@@ -1,4 +1,4 @@
-# Ex. No: 4 Creating Procedures using PL/SQL
+### Ex. No: 4 Creating Procedures using PL/SQL
 
 ### AIM: To create a procedure using PL/SQL.
 
@@ -14,31 +14,32 @@
 
 ### Program To Create Table:
 ```
-create table EMPLOYEE3 (empid NUMBER, empname VARCHAR(20), dept VARCHAR(10),salary NUMBER);
+create table employee(empid number(10),name char(40),dept char(30),salary number(30));
 ```
 ## Program To Create Procedure:
 ```
-create or replace procedure insert_employee_data is
+create or replace procedure inserting_data is
 begin
-insert into EMPLOYEE3 values(1,'vjis','IT',100000000);
-insert into EMPLOYEE3 values(2,'prabha','IoT',20000000);
-insert into EMPLOYEE3 values(3,'dhuru','IT',300000000);
-insert into EMPLOYEE3 values(4,'yuva','IoT',40000000);
+insert into employee values(101,'dhivya','ai ds',60000);
+insert into employee values(102,'swetha','IT',70000);
+insert into employee values(103,'deepesh','IT',80000);
+insert into employee values(104,'thilaga','iot',65000);
 COMMIT;
 END;
 /
 ```
 ## Program To Call The Procedure:
 ```
-execute insert_employee_data;
+execute inserting_data;
 ```
 ## Program To Display The Table:
 ```
-select * from EMPLOYEE3;
+select * from employee;
 ```
 
 ### Output:
-![image](https://github.com/dhivyapriyar/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/119477552/da276eef-9669-4bd2-9154-f1badf9d6af6)
+![dnms4 1](https://github.com/dhivyapriyar/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/119477552/c00b7906-86b5-47e9-b49c-e19c0769cddd)
+![dbms4 2](https://github.com/dhivyapriyar/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/119477552/5d4800f9-10fa-4602-8e3e-ad82c9571639)
 
 
 ### Result:
